@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #000000;
+    letter-spacing: -0.5px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+    letter-spacing: 0.3px;
+}
+
+button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+button.primary {
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+button.primary:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+button.danger {
+    color: #000000;
+    border-color: #000000;
+}
+
+button.danger:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.graph-container {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000000;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#cy {
+    width: 100%;
+    height: 500px;
+}
+
+.status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 0;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.matrix-container {
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.matrix-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000000;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+#output {
+    font-family: 'SF Mono', 'Courier New', monospace;
+    font-size: 13px;
+    color: #000000;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    background: #ffffff;
+    padding: 15px;
+    overflow-x: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #e0e0e0;
+}
+
+.empty-state {
+    color: #999999;
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+}

@@ -1,0 +1,35 @@
+.adjacency-matrix {
+    margin-top: 20px;
+}
+
+.adjacency-matrix h2 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.adjacency-matrix table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.adjacency-matrix th,
+.adjacency-matrix td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 30px;
+}
+
+.adjacency-matrix th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+.adjacency-matrix td {
+    background: white;
+}
+
+.adjacency-matrix tr:hover td {
+    background: #f9f9f9;
+}

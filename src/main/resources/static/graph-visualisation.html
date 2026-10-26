@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cognitive Model Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Cognitive Model Editor</h1>
+
+    <div class="toolbar">
+        <button onclick="addNode()">+ Add Node</button>
+        <button onclick="addEdge()">+ Add Edge</button>
+        <button onclick="deleteSelected()" class="danger">Delete Selected</button>
+        <button onclick="clearGraph()" class="danger">Clear All</button>
+        <button onclick="getAdjacencyMatrix()" class="primary">Get Adjacency Matrix</button>
+    </div>
+
+    <div class="graph-container">
+        <div id="cy"></div>
+        <div class="status" id="status">0 nodes · 0 edges</div>
+    </div>
+
+    <div class="matrix-container">
+        <div class="matrix-header">Adjacency Matrix</div>
+        <div id="output" class="empty-state">No matrix generated yet</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

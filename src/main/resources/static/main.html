@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="model.css">
+    <link rel="stylesheet" href="adjacency-matrix-content.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Learning</title>
+</head>
+<body>
+<div id="root"></div>
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel для JSX (JavaScript XML) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Библиотека для графов -->
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+
+    <script type="text/babel" src="GraphCanvas.jsx"></script>
+    <script type="text/babel" src="useGraph.jsx"></script>
+    <script type="text/babel" src="Button.jsx"></script>
+    <script type="text/babel" src="Navbar.jsx"></script>
+    <script type="text/babel" src="Modal.jsx"></script>
+    <script type="text/babel" src="AdjacencyMatrixContent.jsx"></script>
+    <script type="text/babel" src="App.jsx"></script>
+
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
